@@ -12,7 +12,7 @@ In-process request dispatch. MediatR-style types, not source-compatible with Med
 
 Tests are unit tests. Dispatch is in memory, so an integration project would not exercise a different seam.
 
-License: AGPL-3.0-only (`LICENSE`). Copyright holder exception: `LICENSE-EXCEPTION`.
+License: MIT (`LICENSE`).
 
 ## Publishing to nuget.org
 
