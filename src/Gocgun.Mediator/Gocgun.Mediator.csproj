@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Gocgun.Mediator</RootNamespace>
+    <IsPackable>true</IsPackable>
+    <PackageId>Gocgun.Mediator</PackageId>
+    <Description>In-process request dispatch and pipeline. No dependency on Gocgun.Results.</Description>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+  </ItemGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Gocgun.Mediator.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+</Project>

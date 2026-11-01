@@ -1,0 +1,53 @@
+﻿root = true
+
+[*]
+charset = utf-8-bom
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+
+[*.cs]
+dotnet_diagnostic.IDE0005.severity = warning
+dotnet_diagnostic.IDE0161.severity = warning
+csharp_style_namespace_declarations = file_scoped:warning
+
+dotnet_diagnostic.SA1101.severity = none
+dotnet_diagnostic.SA1309.severity = none
+dotnet_diagnostic.SA1633.severity = none
+
+dotnet_diagnostic.CA2007.severity = none
+dotnet_diagnostic.MA0004.severity = none
+dotnet_diagnostic.CA1062.severity = none
+dotnet_diagnostic.CA1303.severity = none
+dotnet_diagnostic.CA1812.severity = none
+dotnet_diagnostic.CA1848.severity = suggestion
+dotnet_diagnostic.CA1031.severity = suggestion
+dotnet_diagnostic.CA2227.severity = none
+dotnet_diagnostic.CA1032.severity = none
+# IRequest of TResponse is an empty marker so the compiler binds the handler. The name RequestHandlerDelegate is the public contract.
+dotnet_diagnostic.CA1040.severity = none
+dotnet_diagnostic.S2326.severity = none
+dotnet_diagnostic.CA1711.severity = none
+# ADR 0006 names the public type Error. CA1716 treats that name as a VB keyword.
+dotnet_diagnostic.CA1716.severity = none
+# Success and Failure factories are declared on Result of T per ADR 0006.
+dotnet_diagnostic.CA1000.severity = none
+
+[tests/**.cs]
+dotnet_diagnostic.CA1707.severity = none
+dotnet_diagnostic.CA2000.severity = none
+dotnet_diagnostic.CA1515.severity = none
+dotnet_diagnostic.CA1002.severity = none
+dotnet_diagnostic.CA1859.severity = none
+dotnet_diagnostic.MA0016.severity = none
+dotnet_diagnostic.MA0048.severity = none
+dotnet_diagnostic.CS1591.severity = none
+dotnet_diagnostic.SA1600.severity = none
+dotnet_diagnostic.SA1601.severity = none
+dotnet_diagnostic.SA1602.severity = none
+dotnet_diagnostic.SA1611.severity = none
+dotnet_diagnostic.SA1612.severity = none
+dotnet_diagnostic.SA1615.severity = none
+dotnet_diagnostic.xUnit1051.severity = none
+dotnet_diagnostic.SA1402.severity = none
+dotnet_diagnostic.SA1649.severity = none
